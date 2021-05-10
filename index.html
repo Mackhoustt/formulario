@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+   <section class="Formulario">
+        <h1 id="title" >
+            Formulario de inscripción
+        </h1>
+  
+    <p class="parrafos" id="description">
+        Este formulario está creado para el registro a esta web donde podrá ser parte de nosotros y nuestro desarrollo de habilidades utilizando nuestra plataforma para mostrar sus habilidades.
+    </p>
+    <form action="" id="survey-form">
+        <div >
+            <p class="parrafos">  Nombre
+            <br>
+            <label for="name-label">
+                <input class="huecos" type="text" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"   name="name" id="name" placeholder="Ingrese su nombre">
+            </label>
+        </div>
+        <div id="email">
+            <p class="parrafos">  Email
+            <br>
+            <label for="email-label">
+                <input class="huecos"  type="email" name="correo" id="email" placeholder="Ingrese su Email">
+            </label>
+        </div>
+        <div id="number">
+            <p class="parrafos"> Edad
+            <label for="edad-label">
+                <input class="huecos"  type="number" name="edad" min="1" max="100" id="number" placeholder="Ingrese su edad">
+            </label>
+        </div>
+    
+        <div class="">  
+          <p class="parrafos">Actividad</p>  
+        
+            <label for="Actividad">
+                <select name="Acción" id="Actividad" class="huecos">
+                    <option value="Selecciona tu actividad" placeholder="Selecciona tu actividad">Selecciona tu actividad</option>
+                <option value="Estudia">Estudia</option>
+                <option value="Trabaja">Trabaja</option>
+                <option value="Estudia y trabaja">Estudia y trabaja</option>
+                <option value="Otro">Otro</option>
+
+            </select>
+            </label>
+        </div>
+           
+            <div>
+                <p class="parrafos">¿Dónde nos encontraste?</p>
+                <input type="radio" name="1" id="r"> Sitios Web
+                <br>
+                <input type="radio" name="1" id="r"> Periodicos
+                <br>
+                <input type="radio" name="1" id="r"> Recomendación
+                <br>
+            </div>
+           
+            <div class="">  
+                <p class="parrafos">Disponibilidad</p>  
+              
+                  <label for="Tiempo">
+                      <select name="Acción" id="Actividad" class="huecos">
+                          <option value="Seleccione su disponibilidad">Seleccione su disponibilidad</option>
+                      <option value="Estudia">Tiempo parcial</option>
+                      <option value="Trabaja">Tiempo completo</option>
+                      <option value="Estudia y trabaja">Fines de semana</option>
+                      <option value="Otro">Otro</option>
+      
+                  </select>
+                  <p class="parrafos"> Intereses:</p>
+                  <label for="">
+                    <br>
+                    <input class="checkbox"  type="checkbox" value="">
+                Programación</label>
+
+    
+            <label for="">
+                <br>
+                <input class="checkbox"  type="checkbox" value="">
+                Música
+            </label>
+            <label for="">
+                <br>
+                <input class="checkbox"  type="checkbox" value="">
+              Videojuegos  
+            </label>
+            <label for="">
+                <br>
+                <input class="checkbox"  type="checkbox" value="">
+              Películas
+            </label>
+            <label for="">
+                <br>
+                <input class="checkbox"  type="checkbox" value="">Libros
+            </label>
+            <label for="">
+                <br>
+                <input class="checkbox"  type="checkbox" value="">Arte
+            </label>
+        </div>
+        <div>
+            <br>
+            <p class="parrafos">  Información adicional
+            <br>
+            <textarea name="Additionals" class="huecos" id="info" cols="30" rows="5" placeholder="Hablénos de usted"></textarea>
+        </div>
+        <div><Input class="subir" type="submit" value="Registrar"></Input></div>
+     
+    </form>
+</section>
+</body>
+</html>
